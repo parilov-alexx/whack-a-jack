@@ -1,3 +1,5 @@
+import GoblinPic from '../../img/goblin.png';
+
 export default class Goblin {
   constructor(element, box) {
     this.el = element;
@@ -12,7 +14,7 @@ export default class Goblin {
   addNewGoblin(number) {
     this.deleteLastGoblin();
     const item = document.createElement('img');
-    item.src = './img/goblin.png';
+    item.src = GoblinPic;
     item.className = 'goblin';
 
     const cells = document.querySelectorAll('.cell');
