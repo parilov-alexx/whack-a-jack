@@ -1,7 +1,7 @@
 import Goblin from './goblin/goblin';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const goblin = new Goblin(document.querySelector('.cell'));
+  const goblin = new Goblin(document.querySelector('.cell'), document.querySelector('.box'));
   window.goblin = goblin;
 
   const popInterval = setInterval(() => {
